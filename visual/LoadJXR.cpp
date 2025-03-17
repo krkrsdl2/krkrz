@@ -1,5 +1,8 @@
 #include "tjsCommHead.h"
 
+#ifndef _WIN32
+#define KRKRSDL2_STORAGEIMPL_NO_COMPAT
+#endif
 #include "GraphicsLoaderIntf.h"
 #include "LayerBitmapIntf.h"
 #include "StorageIntf.h"
