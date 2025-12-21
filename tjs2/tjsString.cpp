@@ -299,7 +299,7 @@ tTJSString TJSInt32ToHex(tjs_uint32 num, int zeropad)
 		*(p++) = (TJS_W("0123456789ABCDEF"))[num % 16];
 		num /= 16;
 		zeropad --;
-	} while(zeropad || num);
+	} while(zeropad > 0 || num);
 
 	p--;
 	while(buf <= p) *(d++) = *(p--);
